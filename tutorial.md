@@ -32,7 +32,7 @@ We will use the regex example above and break it down to better understand what 
 
 ### Anchors
 
-In Regex "anchor" is a term which defines the start and end of the "regular expression". They can be used to “anchor” the regex match at a certain position.
+In Regex "anchor" is a term which defines the start and end of the regular expression.
 
 Anchor characters:
 
@@ -69,6 +69,21 @@ In the example regex below the highlightd are examples of regex "quantifiers":
 In our match email regex example above the "quantifier's" being used are `+` and `{ }`. The `+` indicates that there is at least one or more characters with the the specifications within the `[a-z0-9_\.-]`. The `{2,6}` indicates that ther will at lest `2` but no more that `6` charcters with the specifications within the `[a-z\.]`.
 
 ### Grouping Constructs
+
+"Grouping construncts" in regex are used to group together part of a regular expression so that it can be treated as a unit. The two main grouping formats are `( )` `[ ]`.
+
+Grouping Constructs:
+
+- `( )` are used to group together part of a regular expression.
+- `[ ]` are used to specify a character set.
+
+In the example regex below the highlightd are examples of regex "groups" using `( )`:
+
+/^`([a-z0-9_\.-]+)`@`([\da-z\.-]+)`\.`([a-z\.]{2,6})`\$/
+
+In the example regex below the highlightd are examples of regex "character sets" using `[ ]`:
+
+/^(`[a-z0-9_\.-]`+)@(`[\da-z\.-]`+)\.(`[a-z\.]`{2,6})\$/
 
 ### Bracket Expressions
 
