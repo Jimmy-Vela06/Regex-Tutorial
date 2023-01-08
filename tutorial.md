@@ -118,3 +118,4 @@ In the regex example to search for an email we use `\d` in the 2nd group within 
 
 I hope you found this Javascript Regex tutorial helpful. If you wish to contact me my Link to my github profile below.
 https://github.com/Jimmy-Vela06
+email: jimmyvela06gmail.com
